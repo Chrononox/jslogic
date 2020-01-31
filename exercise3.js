@@ -1,34 +1,33 @@
 // Question 3: Write a function that converts HEX to RGB. Then Make that function auto-dect the formats so that if you enter HEX color format it returns RGB and if you enter RGB color format it returns HEX.
 console.log('------------exercise2.js----------------')
 //input from user
-//display on page
+
 
 //each val is a third of the rgb or hex, input is (for now) what you want back, //hex or rgb
 const takeValues = ((val1, val2, val3, input) => {
-    if (input.toLowerCase() === 'hex'){
+    if (input.toLowerCase() === 'rgb'){
         let temp = [];
         temp.push(`R: ${hexConvert(val1)},`);
-        temp.push(` G: ${hexConvert(val2)},`);
+        temp.push(` G: ${hexConvert(val2)}`);
         temp.push(` B: ${hexConvert(val3)}`);
         displayer(temp, input);
 
-    }else if(input.toLowerCase() === 'rgb'){
+    }else if(input.toLowerCase() === 'hex'){
         let temp = [];
         temp.push(`#${rgbConvert(val1)}`);
-        temp.push(`${rgbConvert(val1)}`);
-        temp.push(`${rgbConvert(val1)}`);
+        temp.push(`${rgbConvert(val2)}`);
+        temp.push(`${rgbConvert(val3)}`);
         displayer(temp, input);
     }else{
         console.log('X.X please enter hex or rgb');
     }
 })
 
-///NEED TO WORK ON DISPLAYING DATA IN A NICE WAY
+//display in console -- will contole ouptut to page
 const displayer = ((data, input) => {
     // console.log(data.toString().replace(',', ''), input);
-    let temp = data.toString();
-    temp.replace(',', '');
-    console.log(temp, input);
+    let temp = data.toString().replace(',', '');
+    console.log(temp.toUpperCase().replace(',', ''));
 })
 
 const converter = ((input) => {
