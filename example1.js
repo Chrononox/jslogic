@@ -1,6 +1,6 @@
 console.log("-.^")
 
-const array = [1,2,4,591,392,391,2,5,10,2,1,1,1,20,20, 49, 49, 49];
+const array = [1,2,4,591,392,391,2,5,10,2,1,1,1,20,20];
 let newArray = [];
 
 //get array from user
@@ -34,9 +34,9 @@ const arrayOrg = (array => {
                     count = i;
                     return;
                 }else if(tempArray.length === 1){
-                    count = i;
-                   
+                    count = i;                   
                     bigArray.push(value);
+                    tempArray = [];
                     return;
                 }else{
                     // debugger
