@@ -34,22 +34,20 @@ const arrayOrg = (array => {
                     count = i;
                     return;
                 }else if(tempArray.length === 1){
-                    count = i;                   
+                    count = i;
                     bigArray.push(value);
                     tempArray = [];
                     return;
                 }else{
-                    // debugger
                     count = i;
                     bigArray.push(tempArray);
                     tempArray = [];
                     return;
                 }
-                
             }
         }
     })
-    console.log(bigArray);
+    return (bigArray);
 })
 
 
