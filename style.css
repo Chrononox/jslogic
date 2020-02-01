@@ -13,7 +13,7 @@ header {
     background-color: #3299CC;
     border: 3px solid black;
     border-radius: 15px;
-    box-shadow: 5px 8px 15px;
+    box-shadow: 5px 8px 15px rgb(124, 119, 120);
 }
 .hexbox {
     width: 50px;
