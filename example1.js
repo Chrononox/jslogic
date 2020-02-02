@@ -1,10 +1,21 @@
-console.log("-.^")
-console.log('------------exercise1.js----------------')
-const array = [1,2,4,591,392,391,2,5,10,2,1,1,1,20,20];
+//let userInput = document.getElementById("ex1input").value;
+let userOutput = document.getElementById("ex1output");
+let clicked = document.getElementById("ex1click");
+
 let newArray = [];
 
-//get array from user
+//get input from user change into an array
+clicked.addEventListener("click", function(){
+    let userInput = document.getElementById("ex1input");
+    let array = userInput.value.split(',');
 
+    newArray = arrayCopy(array);
+    arraySort(newArray);
+    userOutput.innerHTML = `[${arrayOrg(newArray)}]`;
+})
+
+///////////////////////////////
+console.log("-.^")
 
 //create copy of array
 const arrayCopy = (array => {
@@ -47,14 +58,6 @@ const arrayOrg = (array => {
             }
         }
     })
+    console.log(bigArray);
     return (bigArray);
 })
-
-
-
-
-//////////MAIN/////////
-
-newArray = arrayCopy(array);
-newArray = arraySort(newArray);
-console.log(arrayOrg(newArray));
