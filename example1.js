@@ -37,7 +37,7 @@ const arrayOrg = (array => {
 
     array.map((value, index) => {
         
-        for (i=count; i < array.length; i++){
+        for (i=count; i < array.length + 1; i++){
             if(value === array[i]){
                 tempArray.push(array[i]);
             }else{
