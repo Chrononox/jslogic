@@ -1,4 +1,4 @@
-//let userInput = document.getElementById("ex1input").value;
+//Output still not quite right.
 let userOutput = document.getElementById("ex1output");
 let clicked = document.getElementById("ex1click");
 
@@ -58,6 +58,6 @@ const arrayOrg = (array => {
             }
         }
     })
-    console.log(bigArray);
+    console.log('big array', bigArray);
     return (bigArray);
 })
