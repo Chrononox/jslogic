@@ -1,5 +1,7 @@
 # jslogic
 
+exercises are complete in js. not fully implemented on page
+
 Example 1 
 
 Example 2
